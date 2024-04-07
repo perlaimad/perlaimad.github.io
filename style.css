@@ -1,7 +1,17 @@
 body{
  background-color: #f5eee6;
  font-family: 'Times New Roman', Times, serif;
+ display: flex;
+ justify-content: space-between;
+}
 
+/* Media query for screens narrower than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+    /* Adjust navigation menu for smaller screens */
+    body {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
 }
 
 #homepage {
